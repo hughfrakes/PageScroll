@@ -20,7 +20,7 @@ The plugin can only run at HTML5 browsers.
 	$("#wrap").pageScroll({
 		speed: 20,      //Scroll speed
 		zoom: 20,       //Ratio of zoom-out effects
-		bounce: true        //bounce while scrolling first/last page
+		bounce: true        //Bounce while scrolling first/last page
 	});	
 </script>
 ```
