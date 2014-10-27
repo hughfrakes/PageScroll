@@ -1,43 +1,34 @@
-#PageScroll
-=================
-This is a jQuery plugin to help you create page scroll effects.
+# PageScroll
+
+This is a jQuery plugin to help you create page scrolling effects.
 The plugin can only run at HTML5 browsers.
 
-##Instruction
------------
-//html
+## Usage ##
+```html
 <div id="wrap">
-    <div>First page goes here.</div>
-    <div>Second page goes here.</div>
-    ...
-    <div>You can add as many pages as you like.</div>
+	<div>First page goes here.</div>
+	<div>Second page goes here.</div>
+	...
+	<div>You can add as many pages as you like.</div>
 </div>
-
-//javascript
-$("#").pagescroll();
-// or
-$('a[href*="#"]').pagescroll({duration: 1200});
-// or
-$('a[href*="#"]').pagescroll({
-  duration: 1200,
-  easing: 'easeOutQuart'
-});
+```
+```javascript
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script>
+    $("#wrap").pageScroll();
+    //or
+	$("#wrap").pageScroll({
+		speed: 20,      //Scroll speed
+		zoom: 20,       //Ratio of zoom-out effects
+		bounce: true        //bounce while scrolling first/last page
+	});	
+</script>
 ```
 
-Options
--------
-+ `duration` :  
-  millisecond of move interval time. The default is 1200(ms).
-+ `easing` :  
-  function name of how to move. The default is null (same as '_easeOutQuart_').
 
-If you want to set the easing option name to the option, you require
-including jQuery Easing plugin (http://gsgd.co.uk/sandbox/jquery/easing/).
+## License ##
+You may use this under the terms of either MIT License or GNU General Public License (GPL) Version 2. (same as jQuery).
 
-License
--------
-You may use this under the terms of either MIT License or
-GNU General Public License (GPL) Version 2. (same as jQuery).
+## Copyright ##
+Copyright (c) Hugh Frakes(www.hughfrakes.com). All Rights Reserved.
 
-### Copyright
-Copyright (c) MIYAGINO.net. All Rights Reserved.
